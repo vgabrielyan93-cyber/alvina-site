@@ -1,0 +1,32 @@
+---
+import '../styles/global.css';
+const { title = 'Alvina.am — Apartments in Armenia' } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content="Find comfortable apartment stays in Armenia with photos, details and direct contact." />
+  </head>
+  <body>
+    <header class="bg-white/80 backdrop-blur border-b border-black/5 sticky top-0 z-50">
+      <div class="container-page flex items-center justify-between py-4">
+        <a href="/" class="font-bold text-xl tracking-tight">Alvina<span class="text-alvina-green">.am</span></a>
+        <nav class="flex items-center gap-4 text-sm font-medium">
+          <a href="/listings" class="hover:text-alvina-green">Apartments</a>
+          <a href="/for-owners" class="hover:text-alvina-green">For owners</a>
+          <a href="/listings" class="btn-primary py-2 px-4">Find a stay</a>
+        </nav>
+      </div>
+    </header>
+    <main><slot /></main>
+    <footer class="mt-16 border-t border-black/5 bg-white">
+      <div class="container-page py-8 text-sm text-black/60 flex flex-col sm:flex-row justify-between gap-3">
+        <p>© {new Date().getFullYear()} Alvina.am</p>
+        <p>Apartment information is provided by owners and confirmed before publishing.</p>
+      </div>
+    </footer>
+  </body>
+</html>

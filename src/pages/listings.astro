@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ApartmentCard from '../components/ApartmentCard.astro';
+import { getListings } from '../lib/listings.js';
+const apartments = getListings();
+---
+<BaseLayout title="Listings — Alvina.am"><section class="container-page py-12"><h1 class="text-4xl font-extrabold">Apartment listings</h1><p class="mt-3 text-black/60">Browse available apartment pages.</p><div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{apartments.map((apartment) => <ApartmentCard apartment={apartment} />)}</div></section></BaseLayout>

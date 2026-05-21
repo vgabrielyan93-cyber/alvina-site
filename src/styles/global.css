@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply bg-alvina-soft text-alvina-dark; }
+.container-page { @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8; }
+.btn-primary { @apply inline-flex items-center justify-center rounded-2xl bg-alvina-green px-5 py-3 text-white font-semibold shadow hover:opacity-90 transition; }
+.btn-secondary { @apply inline-flex items-center justify-center rounded-2xl border border-alvina-green/20 bg-white px-5 py-3 text-alvina-green font-semibold shadow-sm hover:bg-white/80 transition; }
+.card { @apply rounded-3xl bg-white shadow-sm border border-black/5; }

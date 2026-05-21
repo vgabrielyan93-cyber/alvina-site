@@ -1,0 +1,38 @@
+[
+  {
+    "id": "a131",
+    "title": "Cozy Mountain View Apartment in Alvina Complex",
+    "subtitle": "A comfortable 31 m² loft-style apartment in Tsaghkadzor",
+    "location": "Tsaghkadzor, Alvina Complex",
+    "area": "31 m²",
+    "rooms": "1 room",
+    "guests": "Up to 4 guests",
+    "price": "35,000 AMD / day",
+    "status": "Available",
+    "hero": "/images/a131/hero.jpg",
+    "photos": [
+      "/images/a131/hero.jpg",
+      "/images/a131/photo-1.jpg",
+      "/images/a131/photo-2.jpg",
+      "/images/a131/photo-3.jpg"
+    ],
+    "description": "Fully equipped apartment with a double bed, sofa bed, kitchen, washing machine, smart TV, balcony and beautiful mountain view. Suitable for couples, small families and short relaxing stays.",
+    "amenities": [
+      "Mountain view",
+      "Balcony",
+      "Smart TV",
+      "Washing machine",
+      "Kitchen",
+      "Microwave",
+      "Electric kettle",
+      "Hot and cold water",
+      "Central heating",
+      "Nearby heated pool"
+    ],
+    "phone": "+37455518847",
+    "whatsapp": "+37455518847",
+    "telegram": "+37455518847",
+    "videoUrl": "",
+    "lastUpdated": "2026-05-21"
+  }
+]

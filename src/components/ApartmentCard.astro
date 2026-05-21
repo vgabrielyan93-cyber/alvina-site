@@ -1,0 +1,15 @@
+---
+const { apartment } = Astro.props;
+---
+<a href={`/listing/${apartment.id}`} class="card overflow-hidden block hover:-translate-y-1 transition">
+  <img src={apartment.hero} alt={apartment.title} class="h-56 w-full object-cover bg-black/5" />
+  <div class="p-5">
+    <div class="flex items-center justify-between gap-3 mb-2">
+      <p class="text-sm text-black/50">{apartment.location}</p>
+      <span class="text-xs rounded-full bg-alvina-soft px-3 py-1 text-alvina-green font-semibold">{apartment.status}</span>
+    </div>
+    <h3 class="text-xl font-bold leading-tight">{apartment.title}</h3>
+    <p class="mt-3 text-black/60">{apartment.rooms} • {apartment.area} • {apartment.guests}</p>
+    <p class="mt-4 font-bold text-alvina-green">{apartment.price}</p>
+  </div>
+</a>
